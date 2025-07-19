@@ -8,20 +8,21 @@ An AI-powered hospital receptionist system using speech recognition and synthesi
 - Internet connection
 
 ## Setup
-1. Create virtual environment:
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+1.
+# Create virtual environment
+python -m venv .venv
 
-3. Configure API keys in `.env` file
+# Activate virtual environment
+.\.venv\Scripts\activate
 
-4. Run the application:
-```bash
-run.bat
-```
+# Install required packages
+pip install streamlit requests audio-recorder-streamlit streamlit-extras
+
+# Now run the app
+streamlit run app.py
+
+3. Configure API keys in .streamlit
+
+# Now run the app
+streamlit run app.py
