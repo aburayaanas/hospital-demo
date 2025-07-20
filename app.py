@@ -169,17 +169,14 @@ with st.sidebar:
         st.session_state["conversation_active"] = True
         st.session_state["is_processing"] = False
         st.session_state["last_processed_audio"] = None
-        st.rerun() # Rerun to clear the main area
     if st.button("End Conversation"):
         st.session_state["conversation_active"] = False
         st.session_state["is_processing"] = False
         st.session_state["last_processed_audio"] = None
-        st.rerun() # Rerun to clear the main area
     if st.button("Clear History"):
         st.session_state["chat_history"] = []
         st.session_state["is_processing"] = False
         st.session_state["last_processed_audio"] = None
-        st.rerun() # Rerun to clear the main area
 
 # --- Conversation Loop ---
 if st.session_state["conversation_active"]:
